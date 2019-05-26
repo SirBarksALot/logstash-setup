@@ -1,0 +1,9 @@
+---
+# tasks file for java
+- name: Install add-apt-repostory
+  become: yes
+  apt: name=software-properties-common state=latest
+
+- name: Install Oracle Java
+  become: yes
+  apt: name='default-jre'
